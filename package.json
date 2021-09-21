@@ -16,6 +16,7 @@
     "nuxt": "^2.11.0"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.12.1",
     "babel-eslint": "^10.0.03",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",

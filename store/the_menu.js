@@ -5,12 +5,15 @@ export default {
   state() {
     return {
       menu: [],
-      menu_is_visible: false,
+      isMenuVisible: false,
     };
   },
   mutations: {
     SET_MENU(state, menu) {
       Vue.set(state, 'menu', menu);
+    },
+    SET_MENU_VISIBLE(state, val) {
+      Vue.set(state, 'isMenuVisible', val);
     },
   },
 };

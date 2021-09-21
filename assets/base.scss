@@ -18,7 +18,8 @@
   margin: 0;
 }
 
-a {
+.v-application a {
+  color: inherit;
   text-decoration: none;
 
   &:active {
