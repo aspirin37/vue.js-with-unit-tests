@@ -25,7 +25,10 @@
         <a href="/"><img src="/logo.png" alt="ГдеМатериал.Ру"></a> <!--TODO(iNerV) do dynamically link-->
       </div>
       <div class="main-navigation__burger">
-        <button class="main-navigation__open-menu-btn" @click="SET_MENU_VISIBLE(true)">
+        <button
+          class="main-navigation__open-menu-btn"
+          @click="SET_MENU_VISIBLE(true)"
+        >
           Menu
         </button>
       </div>
