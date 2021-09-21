@@ -191,6 +191,8 @@ export default {
     position: relative;
     color: rgb(255, 255, 255);
     z-index: 1;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__search {
@@ -205,6 +207,7 @@ export default {
     overflow: hidden;
     padding: .45rem 1.5rem .45rem .5rem;
     line-height: 24px;
+    background: white;
   }
 }
 
