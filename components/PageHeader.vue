@@ -25,7 +25,10 @@
         <a href="/"><img src="/logo.png" alt="ГдеМатериал.Ру"></a> <!--TODO(iNerV) do dynamically link-->
       </div>
       <div class="main-navigation__burger">
-        <button class="main-navigation__open-menu-btn">
+        <button
+          class="main-navigation__open-menu-btn"
+          @click="SET_MENU_VISIBLE(true)"
+        >
           Menu
         </button>
       </div>
@@ -91,12 +94,24 @@
         <a class="site-navigation__link" href="/">Category16</a>
       </li>
     </ul>
+    <catalog-menu />
   </header>
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+import CatalogMenu from './CatalogMenu.vue';
+
 export default {
   name: 'PageHeader',
+  components: {
+    CatalogMenu,
+  },
+  methods: {
+    ...mapMutations('the_menu', [
+      'SET_MENU_VISIBLE',
+    ]),
+  },
 };
 </script>
 
@@ -176,6 +191,8 @@ export default {
     position: relative;
     color: rgb(255, 255, 255);
     z-index: 1;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &__search {
@@ -190,6 +207,7 @@ export default {
     overflow: hidden;
     padding: .45rem 1.5rem .45rem .5rem;
     line-height: 24px;
+    background: white;
   }
 }
 

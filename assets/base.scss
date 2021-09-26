@@ -18,21 +18,30 @@
   margin: 0;
 }
 
-a {
-  text-decoration: none;
 
-  &:active {
-    color: rgb(78, 0, 153);
-  }
-  &:hover {
-    color: rgb(104, 0, 204);
+.v-application {
+  &.theme--light {
+    background-color: inherit;
   }
 
-  &:hover,
-  &:active,
-  &:visited,
-  &:focus {
+  a {
+    color: inherit;
     text-decoration: none;
+
+    &:active,
+    &.nuxt-link-exact-active {
+      color: rgb(78, 0, 153);
+    }
+    &:hover {
+      color: rgb(104, 0, 204);
+    }
+
+    &:hover,
+    &:active,
+    &:visited,
+    &:focus {
+      text-decoration: none;
+    }
   }
 }
 

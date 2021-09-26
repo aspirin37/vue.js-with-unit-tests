@@ -1,12 +1,12 @@
 <template>
-  <section class="container">
+  <v-app>
     <h1 class="visually-hidden">
       ГдеМатериал.Ру
     </h1>
     <PageHeader />
     <nuxt />
     <PageFooter />
-  </section>
+  </v-app>
 </template>
 
 <script>
